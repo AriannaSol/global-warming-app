@@ -54,7 +54,8 @@ h1{ color: #dedee0; padding-bottom: 30px; text-align: center;}
   padding: 0px 40px;
 }
 .desc-div p{
-  color:#dedee0
+  color:#dedee0;
+  text-align: center;
 }
 .desc-div a{
   text-decoration: none;
@@ -111,13 +112,9 @@ h1{ color: #dedee0; padding-bottom: 30px; text-align: center;}
     left: 0;
     right: 0;
   }
-  .recharts-wrapper{
-    border-radius: 15px;
-    margin-right: 3px;
-    margin-left: 3px;
-  }
   .container{
     height: 50vh;
   }
+  
 
 }
