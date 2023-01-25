@@ -1,0 +1,27 @@
+@import "react-slideshow-image/dist/styles.css";
+
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    min-height: 350px;
+    max-height: 600px;
+    background-position: center center;
+  }
+  
+  .link-container {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+  .card-nav-pages{
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  .card-nav-pages:hover{
+    color: rgb(48, 48, 48);
+    text-decoration: underline;
+  }

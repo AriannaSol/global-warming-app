@@ -1,0 +1,61 @@
+.burger-menu-open{
+    flex-flow: column nowrap;
+    background-color: #b1bca0;
+    position: absolute; 
+    top: 10px;
+    right: 20px;
+    height: 20rem;
+    width: 20rem;
+    padding-top: 6rem;
+    display: flex;
+    border-radius: 20px;
+    z-index: 2;
+  }
+  .burger-menu-close{display: none;}
+  .burger-nav-pages{
+    color: #201f1f;
+    padding: 0.5rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    margin-right: 0.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .burger-nav-pages:hover{
+    text-decoration: underline;
+  }
+  
+  .burger-container-dark, .burger-container-light{
+    width: 3rem;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 3;
+    padding: 18px;
+    cursor: pointer;
+  }
+  .burger-container-dark span, .burger-container-light span{
+    width: 3rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    transform-origin: 1px;
+    background-color: #efefef;
+  }
+  .burger-container-light span{
+    background-color: #201f1f;}
+  
+  
+  .burger-container-light span:nth-child(1){transform: rotate(45deg)}
+  .burger-container-light span:nth-child(2){transform: translateX(200%)}
+  .burger-container-light span:nth-child(3){transform: rotate(-45deg)}
+
+  .Container-light span{
+  background-color: rgb(37, 36, 36);
+}
+

@@ -1,0 +1,19 @@
+.recharts-responsive-container{
+    display: flex;
+    justify-content: center; 
+ }
+.recharts-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+    padding: 0.5rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-height: 370px;
+    max-width: 700px;
+  }
+.recharts-wrapper svg {
+    max-height: 370px;
+    width: 100%;
+  }

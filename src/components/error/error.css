@@ -1,0 +1,35 @@
+.error-text-container{
+    display: flex;
+      justify-content: center;
+  }
+  .error-text{
+    font-size: 2rem;
+    padding: 4rem;
+    font-weight: 600;
+    color: #dedee0;
+  }
+  .error-button-container{
+    display: flex;
+    justify-content: center;
+  }
+  .error-button{
+    margin-top: 1.25rem;
+    font-weight: bold;
+    color: #dedee0;
+    font-size:1.2rem;
+    border: 0.5px solid #0c0c0c;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  .error-button:hover{
+    background-color: rgb(167, 167, 167);
+    transition: background-color 1.2s, color 1.2s;
+  }
+  .error-button a{
+    text-decoration: none;
+    color: #201f1f;
+  }
+  .error-button a:hover{
+    text-decoration: underline;
+  }
