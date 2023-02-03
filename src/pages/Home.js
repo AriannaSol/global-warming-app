@@ -2,27 +2,23 @@ import { useContext } from "react";
 import Card from "../components/homeCards/Card";
 import Navbar from "../components/navbar/Navbar";
 import { LightModeContext } from "../context/LightModeContext";
-
+import cx from "classnames";
 function Home() {
   const { lightMode } = useContext(LightModeContext);
+  const containerClass = cx({
+    Container: true,
+    lightmode: lightMode,
+  });
   const contentProvider = () => {
     return (
-      <div className="home-container-div">
+      <div className="h-screen overflow-auto">
         <Navbar />
-        <section className="home-section">
+        <section className="py-8 px-0">
           <Card />
         </section>
       </div>
     );
   };
-  return (
-    <main
-      className={
-        lightMode ? "Container Container-light" : "Container Container-dark"
-      }
-    >
-      {contentProvider()}
-    </main>
-  );
+  return <main className={containerClass}>{contentProvider()}</main>;
 }
 export default Home;

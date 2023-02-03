@@ -16,12 +16,4 @@
     background: #efefef;
     text-align: center;
   }
-  .card-nav-pages{
-    color: black;
-    font-size: 22px;
-    text-decoration: none;
-  }
-  .card-nav-pages:hover{
-    color: rgb(48, 48, 48);
-    text-decoration: underline;
-  }
+ 

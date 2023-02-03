@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html{
   overflow-x: hidden;
@@ -17,104 +20,22 @@ code {
     monospace;
 }
 
-h1{ color: #dedee0; padding-bottom: 30px; text-align: center;}
 
-/*home*/
-.home-container-div{
-  height: 100vh;
-  overflow: auto; /*burger menu di home non fisso*/
-}
-.home-section{
-  padding: 2rem 0;
-}
-.title-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-/*spinner*/
-.loader-container{
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
-}
-.loader-container span{
-  border-color:#efefef
-}
-/*pages*/
-.page-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.desc-div{
-  padding: 0px 40px;
-}
-.desc-div p{
-  color:#dedee0;
-  text-align: center;
-}
-.desc-div a{
-  text-decoration: none;
-  color: #2c9736;
-  font-weight: 500;
-}
-.desc-div a:hover{
-  text-decoration: underline;
-  color: #8acd90;
-  transition: text-decoration 1.2s, color 1.2s;
-}
-.desc-div a:active{
-  color: #8acd90;
-}
-
-/*pages-chart*/
-.container{
-  position: relative; 
-  width: 100%; 
-  height: 100vh;
-}
-.chart-container{
-  position: absolute;
-  left: 2rem;
-  right: 2rem;
-  bottom: 2rem;
-  top: 0;
-}
-
-/*light mode*/
+/*light mode - classNames*/
 .Container{
   height: 100%;
-}
-
-.Container-light{
-  background-color: #eaf3ff;
-}
-.Container-light h1{
-  color: #201f1f;
-}
-.Container-light span{
-  background-color: rgb(37, 36, 36);
-}
-.Container-light p{
-  color: #201f1f;
-}
-.Container-dark{
   background-color: #201f1f;
 }
-
-
-@media screen and (max-width:450px){
-  .chart-container{
-    left: 0;
-    right: 0;
-  }
-  .container{
-    height: 50vh;
-  }
-  
-
+.lightmode{
+  background-color: #eaf3ff;
 }
+.lightmode h1{
+  color: #201f1f;
+}
+.lightmode p{
+  color: #201f1f;
+}
+
+
+
+

@@ -7,8 +7,10 @@ import "./card.css";
 function Card() {
   return (
     <div>
-      <div className="title-container">
-        <h1>Global Warming and Climate Change</h1>
+      <div className="flex items-center justify-center">
+        <h1 className="text-h1-white pb-8 text-center text-2xl font-bold">
+          Global Warming and Climate Change
+        </h1>
       </div>
       <Slide
         nextArrow={
@@ -46,15 +48,16 @@ function Card() {
           </button>
         }
       >
-        {cardMenu.map((item) => {
+        {Object.keys(cardMenu).map((item) => {
           return (
-            <div key={item.id} className="each-slide-effect">
-              <div style={{ backgroundImage: `url(${item.img})` }}>
+            <div key={cardMenu[item].id} className="each-slide-effect">
+              <div style={{ backgroundImage: `url(${cardMenu[item].img})` }}>
                 <div className="link-container">
-                  {" "}
-                  <Link className="card-nav-pages" to={`${item.path}`}>
-                    {" "}
-                    {item.title}
+                  <Link
+                    className="text-black text-xl no-underline hover:text-gray-800 hover:underline"
+                    to={`${cardMenu[item].path}`}
+                  >
+                    {cardMenu[item].title}
                   </Link>
                 </div>
               </div>

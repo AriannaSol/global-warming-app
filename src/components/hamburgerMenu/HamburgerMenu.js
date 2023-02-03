@@ -1,50 +1,66 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./hamburgerMenu.css";
+import Hamburger from "hamburger-react";
+import { LightModeContext } from "../../context/LightModeContext";
+import cx from "classnames";
 
 const HamburgerMenu = () => {
-  const [open, setOpen] = useState(false);
-  function closeMenu() {
-    setOpen(false);
-  }
+  const [isOpen, setOpen] = useState(false);
+  const { lightMode } = useContext(LightModeContext);
 
+  const menuClass = cx({
+    menu: true,
+    close: !isOpen,
+  });
+  const navPagesClass = cx({
+    navpages: true,
+    light: !lightMode,
+  });
   return (
-    <div className="burger-menu">
-      <div
-        className={open ? "burger-container-light" : "burger-container-dark"}
-        open={open}
-        onClick={() => setOpen(!open)}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <div className={open ? "burger-menu-open" : "burger-menu-close"}>
-        <Link className="burger-nav-pages" to="/" onClick={closeMenu}>
+    <div>
+      <Hamburger
+        toggled={isOpen}
+        toggle={() => setOpen(!isOpen)}
+        color={lightMode ? "#201f1f" : "#efefef"}
+      />
+      <div className={menuClass}>
+        <Link className={navPagesClass} to="/" onClick={() => setOpen(false)}>
           Home
         </Link>
         <Link
-          className="burger-nav-pages"
+          className={navPagesClass}
           to="/temperature"
-          onClick={closeMenu}
+          onClick={() => setOpen(false)}
         >
           Temperatures
         </Link>
-        <Link className="burger-nav-pages" to="/co2" onClick={closeMenu}>
+        <Link
+          className={navPagesClass}
+          to="/co2"
+          onClick={() => setOpen(false)}
+        >
           CO2
         </Link>
-        <Link className="burger-nav-pages" to="/methane" onClick={closeMenu}>
+        <Link
+          className={navPagesClass}
+          to="/methane"
+          onClick={() => setOpen(false)}
+        >
           Methane
         </Link>
         <Link
-          className="burger-nav-pages"
+          className={navPagesClass}
           to="/nitrous-oxide"
-          onClick={closeMenu}
+          onClick={() => setOpen(false)}
         >
           NO2
         </Link>
-        <Link className="burger-nav-pages" to="/arctic" onClick={closeMenu}>
+        <Link
+          className={navPagesClass}
+          to="/arctic"
+          onClick={() => setOpen(false)}
+        >
           Polar Ice
         </Link>
       </div>

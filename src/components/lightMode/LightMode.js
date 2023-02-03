@@ -8,7 +8,7 @@ function LightMode() {
     toggleLightMode();
   }
   return (
-    <div className="lightswitch-container">
+    <div>
       <img
         src={
           lightMode
@@ -17,7 +17,6 @@ function LightMode() {
         }
         alt="lightswitch"
         onClick={handleClick}
-        className="lightswitch"
       />
     </div>
   );
