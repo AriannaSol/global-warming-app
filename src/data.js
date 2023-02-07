@@ -44,7 +44,7 @@ const cardMenu = {
           href="https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide"
         >
           Climate Change: Atmospheric Carbon Dioxide
-        </a>
+        </a>{" "}
         and{" "}
         <a
           className="no-underline text-green-700 font-medium hover:underline hover:text-green-400 duration-1000 active:text-green-400"
