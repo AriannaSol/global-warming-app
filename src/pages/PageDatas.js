@@ -27,7 +27,13 @@ function PageData() {
           </h1>
         </div>
         <div className="py-0 px-10">{desc}</div>
-        <Suspense fallback={<ThreeDots />}>
+        <Suspense
+          fallback={
+            <div className="relative w-full h-screen xs:h-64 flex justify-center">
+              <ThreeDots />
+            </div>
+          }
+        >
           <Await resolve={chartData}>
             {(chartData) => {
               const respData =

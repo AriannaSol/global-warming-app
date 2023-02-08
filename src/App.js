@@ -22,7 +22,7 @@ const pages = createBrowserRouter([
         element: <PageDatas />,
         loader: async ({ params }) => {
           return [
-            await clientApi(`${params.pathName}-api`),
+            clientApi(`${params.pathName}-api`),
             data[params.pathName].title,
             data[params.pathName].desc,
           ];
