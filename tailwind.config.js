@@ -10,9 +10,6 @@ module.exports = {
     screens: {
       xs: { max: "450px" },
     },
-    maxHeight: {
-      55: "55rem",
-    },
   },
   plugins: [],
 };

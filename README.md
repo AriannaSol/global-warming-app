@@ -14,6 +14,7 @@ Start2Impact - Front End Development final project
 * Axios
 * Recharts
 * React Slideshow
+* Tailwind CSS
 
 ## Api
 
