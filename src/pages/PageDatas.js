@@ -20,7 +20,7 @@ function PageData() {
   return (
     <div className={containerClass}>
       <Navbar />
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center xs:max-h-[55rem]">
         <div className="flex items-center justify-center">
           <h1 className="text-h1-white py-16 text-center text-3xl font-bold">
             {title}
@@ -53,7 +53,7 @@ function PageData() {
                 };
               });
               return (
-                <div className="relative w-full h-screen xs:h-64">
+                <div className="relative w-full h-screen">
                   <div className="absolute top-0 left-8 right-8 bottom-8 xs:right-0 xs:left-0">
                     <Chart chartDatas={chartDatas} pathName={pathName} />
                   </div>

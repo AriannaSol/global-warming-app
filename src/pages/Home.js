@@ -19,6 +19,7 @@ function Home() {
       </div>
     );
   };
+
   return <main className={containerClass}>{contentProvider()}</main>;
 }
 export default Home;

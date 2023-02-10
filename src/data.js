@@ -17,6 +17,8 @@ const cardMenu = {
         such as Co2, methane, and nitrous oxide in the atmosphere is strictly
         correlated. For more information visit:{" "}
         <a
+          target="_blank"
+          rel="noreferrer"
           className="no-underline text-green-700 font-medium hover:underline hover:text-green-400 duration-1000 active:text-green-400"
           href="https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature"
         >
@@ -40,6 +42,8 @@ const cardMenu = {
         30%. For more information about prehistoric CO2 concentration, current
         and future consequences please visit:{" "}
         <a
+          target="_blank"
+          rel="noreferrer"
           className="no-underline text-green-700 font-medium hover:underline hover:text-green-400 duration-1000 active:text-green-400"
           href="https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide"
         >
@@ -47,6 +51,8 @@ const cardMenu = {
         </a>{" "}
         and{" "}
         <a
+          target="_blank"
+          rel="noreferrer"
           className="no-underline text-green-700 font-medium hover:underline hover:text-green-400 duration-1000 active:text-green-400"
           href="https://climate.nasa.gov/climate_resources/24/graphic-the-relentless-rise-of-carbon-dioxide/"
         >
@@ -70,6 +76,8 @@ const cardMenu = {
         ozone-destroying compound emitted by human activities. For more detailed
         information please visit:{" "}
         <a
+          target="_blank"
+          rel="noreferrer"
           className="no-underline text-green-700 font-medium hover:underline hover:text-green-400 duration-1000 active:text-green-400"
           href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3306630/"
         >
@@ -78,6 +86,8 @@ const cardMenu = {
         </a>{" "}
         and{" "}
         <a
+          target="_blank"
+          rel="noreferrer"
           className="no-underline text-green-700 font-medium hover:underline hover:text-green-400 duration-1000 active:text-green-400"
           href="https://www.epa.gov/ghgemissions/overview-greenhouse-gases#nitrous-oxide"
         >
@@ -105,6 +115,8 @@ const cardMenu = {
         human activities have increased this amount by around 150%. For more
         information about the methane situation please visit:{" "}
         <a
+          target="_blank"
+          rel="noreferrer"
           className="no-underline text-green-700 font-medium hover:underline hover:text-green-400 duration-1000 active:text-green-400"
           href="https://www.epa.gov/ghgemissions/overview-greenhouse-gases#methane"
         >
@@ -112,6 +124,8 @@ const cardMenu = {
         </a>{" "}
         and{" "}
         <a
+          target="_blank"
+          rel="noreferrer"
           className="no-underline text-green-700 font-medium hover:underline hover:text-green-400 duration-1000 active:text-green-400"
           href="https://earthobservatory.nasa.gov/images/146978/methane-emissions-continue-to-rise"
         >
@@ -135,6 +149,8 @@ const cardMenu = {
         amounts of methane is released to the atmosphere, fueling more the
         process of global warming. For more details please visit:{" "}
         <a
+          target="_blank"
+          rel="noreferrer"
           className="no-underline text-green-700 font-medium hover:underline hover:text-green-400 duration-1000 active:text-green-400"
           href="https://www.npolar.no/en/themes/climate-change-in-the-arctic/#toggle-id-8"
         >
@@ -142,6 +158,8 @@ const cardMenu = {
         </a>{" "}
         and{" "}
         <a
+          target="_blank"
+          rel="noreferrer"
           className="no-underline text-green-700 font-medium hover:underline hover:text-green-400 duration-1000 active:text-green-400"
           href="https://www.igsoc.org/annals/46/a46a005.pdf"
         >

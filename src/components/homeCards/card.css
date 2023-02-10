@@ -16,4 +16,8 @@
     background: #efefef;
     text-align: center;
   }
- 
+  .nav{margin:10px;}
+
+  @media screen and (max-width:450px){
+    .nav{margin: 3px;}
+  }
