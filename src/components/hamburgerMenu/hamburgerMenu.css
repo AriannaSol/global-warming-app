@@ -1,18 +1,20 @@
-.menu{
+.menu {
   flex-flow: column nowrap;
   background-color: #919888;
-  position: absolute; 
+  position: absolute;
   top: 10px;
   right: 20px;
-  height: 21rem; 
+  height: 21rem;
   width: 18rem;
-  padding-top: 2.5rem; 
+  padding-top: 2.5rem;
   display: flex;
   border-radius: 20px;
   z-index: 2;
 }
-.close{display: none;}
-.navpages{
+.close {
+  display: none;
+}
+.navpages {
   color: #201f1f;
   padding: 0.5rem;
   text-transform: capitalize;
@@ -23,13 +25,12 @@
   font-size: 1.2rem;
   text-decoration: none;
 }
-.navpages:hover{
+.navpages:hover {
   text-decoration: underline;
 }
-.light{
+.light {
   color: #efefef;
 }
-.hamburger-react{
+.hamburger-react {
   z-index: 3;
 }
-

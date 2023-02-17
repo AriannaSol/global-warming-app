@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   overflow-x: hidden;
 }
 body {
@@ -20,23 +20,17 @@ code {
     monospace;
 }
 
-
 /*light mode - classNames*/
-.Container{
+.Container {
   height: 100%;
   background-color: #201f1f;
 }
-.lightmode{
+.lightmode {
   background-color: #eaf3ff;
 }
-.lightmode h1{
+.lightmode h1 {
   color: #201f1f;
 }
-.lightmode p{
+.lightmode p {
   color: #201f1f;
 }
-
-
-
-
-

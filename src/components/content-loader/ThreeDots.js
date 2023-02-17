@@ -1,5 +1,5 @@
-import React from "react";
-import ContentLoader from "react-content-loader";
+import React from 'react'
+import ContentLoader from 'react-content-loader'
 
 const ThreeDots = (props) => {
   return (
@@ -14,7 +14,7 @@ const ThreeDots = (props) => {
       <circle cx="194" cy="86" r="8" />
       <circle cx="238" cy="86" r="8" />
     </ContentLoader>
-  );
-};
+  )
+}
 
-export default ThreeDots;
+export default ThreeDots

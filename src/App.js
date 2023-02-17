@@ -1,16 +1,16 @@
-import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
-import PageDatas from "./pages/PageDatas";
-import { LightModeProvider } from "./context/LightModeContext";
-import RootLayout from "./pages/RootLayout";
-import Error from "./components/error/Error";
-import clientApi from "./services/clientApi";
-import data from "./data";
+import React from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from './pages/Home'
+import PageDatas from './pages/PageDatas'
+import { LightModeProvider } from './context/LightModeContext'
+import RootLayout from './pages/RootLayout'
+import Error from './components/error/Error'
+import clientApi from './services/clientApi'
+import data from './data'
 
 const pages = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <RootLayout />,
     children: [
       {
@@ -18,27 +18,27 @@ const pages = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/:pathName",
+        path: '/:pathName',
         element: <PageDatas />,
         loader: async ({ params }) => {
           return [
             clientApi(`${params.pathName}-api`),
             data[params.pathName].title,
             data[params.pathName].desc,
-          ];
+          ]
         },
       },
     ],
     errorElement: <Error />,
   },
-]);
+])
 
 function App() {
   return (
     <LightModeProvider>
       <RouterProvider router={pages} />
     </LightModeProvider>
-  );
+  )
 }
 
-export default App;
+export default App

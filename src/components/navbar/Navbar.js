@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import HamburgerMenu from "../hamburgerMenu/HamburgerMenu";
-import LightMode from "../lightMode/LightMode";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import HamburgerMenu from '../hamburgerMenu/HamburgerMenu'
+import LightMode from '../lightMode/LightMode'
 
 function Navbar() {
   return (
@@ -23,6 +23,6 @@ function Navbar() {
         <HamburgerMenu />
       </div>
     </nav>
-  );
+  )
 }
-export default Navbar;
+export default Navbar

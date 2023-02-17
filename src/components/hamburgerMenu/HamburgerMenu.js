@@ -1,28 +1,29 @@
-import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
-import "./hamburgerMenu.css";
-import Hamburger from "hamburger-react";
-import { LightModeContext } from "../../context/LightModeContext";
-import cx from "classnames";
+import React, { useState, useContext } from 'react'
+import { Link } from 'react-router-dom'
+import './hamburgerMenu.css'
+import Hamburger from 'hamburger-react'
+import { LightModeContext } from '../../context/LightModeContext'
+import cx from 'classnames'
 
 const HamburgerMenu = () => {
-  const [isOpen, setOpen] = useState(false);
-  const { lightMode } = useContext(LightModeContext);
+  const [isOpen, setOpen] = useState(false)
+  const { lightMode } = useContext(LightModeContext)
 
   const menuClass = cx({
     menu: true,
     close: !isOpen,
-  });
+  })
   const navPagesClass = cx({
     navpages: true,
     light: !lightMode,
-  });
+  })
+
   return (
     <div>
       <Hamburger
         toggled={isOpen}
         toggle={() => setOpen(!isOpen)}
-        color={lightMode ? "#201f1f" : "#efefef"}
+        color={lightMode ? '#201f1f' : '#efefef'}
       />
       <div className={menuClass}>
         <Link className={navPagesClass} to="/" onClick={() => setOpen(false)}>
@@ -65,6 +66,6 @@ const HamburgerMenu = () => {
         </Link>
       </div>
     </div>
-  );
-};
-export default HamburgerMenu;
+  )
+}
+export default HamburgerMenu

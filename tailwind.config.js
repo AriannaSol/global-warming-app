@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
       colors: {
-        "h1-white": "#dedee0",
+        'h1-white': '#dedee0',
       },
     },
     screens: {
-      xs: { max: "450px" },
+      xs: { max: '450px' },
     },
   },
   plugins: [],
-};
+}

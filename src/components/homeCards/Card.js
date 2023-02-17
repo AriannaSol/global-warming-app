@@ -1,8 +1,8 @@
-import cardMenu from "../../data";
-import { Link } from "react-router-dom";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
-import "./card.css";
+import cardMenu from '../../data'
+import { Link } from 'react-router-dom'
+import { Slide } from 'react-slideshow-image'
+import 'react-slideshow-image/dist/styles.css'
+import './card.css'
 
 function Card() {
   return (
@@ -16,9 +16,9 @@ function Card() {
         nextArrow={
           <button
             style={{
-              background: "none",
-              border: "0px",
-              width: "30px",
+              background: 'none',
+              border: '0px',
+              width: '30px',
             }}
           >
             <svg
@@ -33,9 +33,9 @@ function Card() {
         prevArrow={
           <button
             style={{
-              background: "none",
-              border: "0px",
-              width: "30px",
+              background: 'none',
+              border: '0px',
+              width: '30px',
             }}
           >
             <svg
@@ -62,11 +62,11 @@ function Card() {
                 </div>
               </div>
             </div>
-          );
+          )
         })}
       </Slide>
     </div>
-  );
+  )
 }
 
-export default Card;
+export default Card

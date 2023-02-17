@@ -1,8 +1,8 @@
 const cardMenu = {
   temperature: {
     id: 1,
-    title: "Temperature anomalies",
-    img: "./images/temperature.jpg",
+    title: 'Temperature anomalies',
+    img: './images/temperature.jpg',
     desc: (
       <p className="text-gray-300 text-center">
         The current global warming rate is not natural. From 1880 to 1981 was
@@ -15,7 +15,7 @@ const cardMenu = {
         hemisphere is warming faster. The arctic has warmed between (2 °C / 3.6
         °F) and (4 °C / 7.2 °F). Earth temperature and the proportion of gases
         such as Co2, methane, and nitrous oxide in the atmosphere is strictly
-        correlated. For more information visit:{" "}
+        correlated. For more information visit:{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -27,12 +27,12 @@ const cardMenu = {
         .
       </p>
     ),
-    path: "/temperature",
+    path: '/temperature',
   },
   co2: {
     id: 2,
-    title: "Carbon dioxide levels",
-    img: "./images/CO2.jpg",
+    title: 'Carbon dioxide levels',
+    img: './images/CO2.jpg',
     desc: (
       <p className="text-gray-300 text-center">
         For thousands of years, the natural concentration of CO2 in earth
@@ -40,7 +40,7 @@ const cardMenu = {
         revolution, human activities like the burning of fossil fuels,
         deforestation, and livestock have increased this amount by more than
         30%. For more information about prehistoric CO2 concentration, current
-        and future consequences please visit:{" "}
+        and future consequences please visit:{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -48,8 +48,8 @@ const cardMenu = {
           href="https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide"
         >
           Climate Change: Atmospheric Carbon Dioxide
-        </a>{" "}
-        and{" "}
+        </a>{' '}
+        and{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -61,12 +61,12 @@ const cardMenu = {
         .
       </p>
     ),
-    path: "/co2",
+    path: '/co2',
   },
-  "nitrous-oxide": {
+  'nitrous-oxide': {
     id: 3,
-    title: "Nitrous oxide levels",
-    img: "./images/NO2.jpg",
+    title: 'Nitrous oxide levels',
+    img: './images/NO2.jpg',
     desc: (
       <p className="text-gray-300 text-center">
         Nitrous oxide is a gas that is produced by the combustion of fossil fuel
@@ -74,7 +74,7 @@ const cardMenu = {
         natural processes, and other agricultural and industrial activities. It
         is the third largest heat-trapping gas in the atmosphere and the biggest
         ozone-destroying compound emitted by human activities. For more detailed
-        information please visit:{" "}
+        information please visit:{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -83,8 +83,8 @@ const cardMenu = {
         >
           Stratospheric ozone depletion due to nitrous oxide: influences of
           other gases
-        </a>{" "}
-        and{" "}
+        </a>{' '}
+        and{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -96,12 +96,12 @@ const cardMenu = {
         .
       </p>
     ),
-    path: "/nitrous-oxide",
+    path: '/nitrous-oxide',
   },
   methane: {
     id: 4,
-    title: "Methane levels",
-    img: "./images/metano.jpg",
+    title: 'Methane levels',
+    img: './images/metano.jpg',
     desc: (
       <p className="text-gray-300 text-center">
         Methane is a flammable gas formed by geological and biological
@@ -113,7 +113,7 @@ const cardMenu = {
         more than 650,000 years, methane concentration in the atmosphere was
         between 350 - 800 ppb. From the beginning of the industrial revolution,
         human activities have increased this amount by around 150%. For more
-        information about the methane situation please visit:{" "}
+        information about the methane situation please visit:{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -121,8 +121,8 @@ const cardMenu = {
           href="https://www.epa.gov/ghgemissions/overview-greenhouse-gases#methane"
         >
           EPA: Methane Emissions
-        </a>{" "}
-        and{" "}
+        </a>{' '}
+        and{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -133,12 +133,12 @@ const cardMenu = {
         </a>
       </p>
     ),
-    path: "/methane",
+    path: '/methane',
   },
   arctic: {
     id: 5,
-    title: "Melted polar ice caps",
-    img: "./images/ghiacciai.jpg",
+    title: 'Melted polar ice caps',
+    img: './images/ghiacciai.jpg',
     desc: (
       <p className="text-gray-300 text-center">
         The arctic is warming around twice as fast as global average. Some of
@@ -147,7 +147,7 @@ const cardMenu = {
         cover. From 2010 to present we are losing 12.85% per decade! Another
         consequence is permafrost thawing. This is a process in which large
         amounts of methane is released to the atmosphere, fueling more the
-        process of global warming. For more details please visit:{" "}
+        process of global warming. For more details please visit:{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -155,8 +155,8 @@ const cardMenu = {
           href="https://www.npolar.no/en/themes/climate-change-in-the-arctic/#toggle-id-8"
         >
           Climate change in the Arctic
-        </a>{" "}
-        and{" "}
+        </a>{' '}
+        and{' '}
         <a
           target="_blank"
           rel="noreferrer"
@@ -168,7 +168,7 @@ const cardMenu = {
         .
       </p>
     ),
-    path: "/arctic",
+    path: '/arctic',
   },
-};
-export default cardMenu;
+}
+export default cardMenu

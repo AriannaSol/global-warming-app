@@ -1,12 +1,12 @@
-import axios from "axios";
+import axios from 'axios'
 
 const handleFetch = axios.create({
-  baseURL: "https://global-warming.org/api/",
-});
+  baseURL: 'https://global-warming.org/api/',
+})
 
 export const clientApi = async (url) => {
-  const response = await handleFetch.get(url);
-  return response.data;
-};
+  const response = await handleFetch.get(url)
+  return response.data
+}
 
-export default clientApi;
+export default clientApi
